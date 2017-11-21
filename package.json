@@ -1,0 +1,19 @@
+{
+  "name": "tnc",
+  "version": "1.0.0",
+  "description": "毕业设计：大自然保护协会官网",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evelyn-liu/TNC.git"
+  },
+  "author": "evelynliu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evelyn-liu/TNC/issues"
+  },
+  "homepage": "https://github.com/evelyn-liu/TNC#readme"
+}
