@@ -1,27 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="../base/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-</head>
-<body>
-	<div class="main">
-		<div class="menu">
-			<div class="leftMenu"></div>
-			<div class="centerMenu"></div>
-			<div class="rightMenu"></div>
-		</div>
-		<div class="home"></div>
-		<div class="aboutTNC"></div>
-		<div class="protectProject"></div>
-		<div class="protectScience"></div>
-		<div class="newsCenter"></div>
-		<div class="IntoTheNature"></div>
-		<div class="myTNC"></div>
-		<div class="foot"></div>
+{% extends './layout.html' %} {% block title %}TNC 大自然保护协会{% endblock %}{% block head %}
+<link rel="stylesheet" type="text/css" href="../css/index.css"> {% endblock %} {% block content %}
+<div id="main">
+	<div class="menu">
+	{% include "header.html" %}
 	</div>
-	<script data-main="main" src="../base/require.js" type="text/javascript" charset="utf-8"></script>
-</body>
-</html>
+
+	<div class="content">
+			{% include "content.html" %}
+	</div>
+	<div class="foot"></div>
+</div>
+{% endblock %}
