@@ -1,20 +1,70 @@
-class setContent{
-    //通过wd_text 和 wd_icon 的 onmouseover 控制circle 和 map_div;
-    //循环遍历 span 和 img 
-   setHover(){
 
-   }
-}
-
-class setWorld extends setContent{
-    constructor(){
-        super();
-        this.sethh();
+class setWorld  {
+    constructor() {
+        // super();
+        this.setWorldHover();
     }
-    sethh(){
+    setWorldHover() {          
         let worldSpan = document.getElementsByClassName('wd_text');
-        worldSpan.onmouseover = setHover();
+        let worldIcon = document.getElementsByClassName('wd_icon');
+        let sLen = worldSpan.length;
+        let iLen = worldIcon.length; 
+        let that = this;
+
+        for (let i = 0; i < sLen; i++) {
+            worldSpan[i].addEventListener('mouseover',function(e){
+                that.setOver(e);
+            },false);
+            worldSpan[i].addEventListener('mouseleave',function(e){
+                that.setLeave(e);
+            },false);
+        }
+        for (let j = 0; j < iLen; j++) {
+            worldIcon[j].addEventListener('mouseover',function(e){
+                that.setOver(e);
+            },false);
+            worldIcon[j].addEventListener('mouseleave',function(e){
+                that.setLeave(e);
+            },false);
+        }  
+        let mapDiv  = document.getElementsByClassName('map_div');
+        for(let k =0,len = mapDiv.length;k<len;k++){
+            mapDiv[k].addEventListener('mouseover',function(e){
+                that.setOver(e);
+            },false)
+            mapDiv[k].addEventListener('mouseleave',function(e){
+                that.setLeave(e);
+            },false)
+        }
+        
+
     }
-    
-     
+    setOver(e) {
+            let parent = e.path[1];
+            let that = this;
+            // console.log(parent);
+            let circle = parent.getElementsByTagName('div');
+            circle[0].style +=';opacity:1;';
+            let span = parent.getElementsByTagName('span');
+            for(let oi= 1,olen =circle.length;oi<olen;oi++ ){
+               circle[oi].style.transform ='scale(0)';
+               circle[oi].onmousemove = function(e){
+                that.setOver(e);
+               }
+            }
+    }
+    setLeave(e){
+        let parent = e.path[1];
+        let circle = parent.getElementsByTagName('div');
+        circle[0].style +=';opacity:0;';
+        let span = parent.getElementsByTagName('span');
+        for(let oi= 1,olen =circle.length;oi<olen;oi++ ){
+        circle[oi].style.transform ='scale(1)';
+        }
+    }
+
+
 }
+
+let sw = new setWorld();
+  

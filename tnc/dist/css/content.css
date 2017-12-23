@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #home .home_logo {
   width: 237px;
   height: 101px;
@@ -101,7 +102,7 @@
   width: 100%;
   height: 105%; }
 #tncChina .china_p {
-  background: url(../imgs/icon_map.png) 0px center no-repeat;
+  background: url(../imgs/page_1/tncChina/icon_map.png) 0px center no-repeat;
   width: 778px;
   left: 50%;
   top: 50%;
@@ -134,11 +135,11 @@
     width: 1280px;
     margin-left: -640px; } }
 #tncWorld {
-  background: url(../imgs/tncWorld/world_bg.jpg) 0px 0px repeat;
+  background: url(../imgs/page_1/tncWorld/world_bg.jpg) 0px 0px repeat;
   overflow: auto; }
   #tncWorld .world_p {
     width: 778px;
-    background: url(../imgs/tncWorld/worldicon_dot.png) 0px center no-repeat;
+    background: url(../imgs/page_1/tncWorld/worldicon_dot.png) 0px center no-repeat;
     padding-left: 120px;
     left: 50%;
     top: 50%;
@@ -151,41 +152,41 @@
   #tncWorld .world_a {
     width: 996px;
     height: 507px;
-    background: url(../imgs/tncWorld/world_map.png) 0px 0px no-repeat;
+    background: url(../imgs/page_1/tncWorld/world_map.png) 0px 0px no-repeat;
     left: 50%;
     top: 70%;
     margin-left: -498px;
     position: absolute; }
     #tncWorld .world_a .world_beimei {
-      background: url(../imgs/tncWorld/beimei.png) no-repeat;
+      background: url(../imgs/page_1/tncWorld/beimei.png) no-repeat;
       width: 316px;
       height: 274px;
-      top: 8px;
-      left: 0; }
+      top: -124px;
+      left: -158px; }
     #tncWorld .world_a .world_ouzhou {
-      background: url(../imgs/tncWorld/ouzhou.png) no-repeat;
+      background: url(../imgs/page_1/tncWorld/ouzhou.png) no-repeat;
       width: 150px;
       height: 209px;
-      left: 451px;
-      top: 6px; }
+      left: -85px;
+      top: -116px; }
     #tncWorld .world_a .world_yatai {
-      background: url(../imgs/tncWorld/yazhou.png) no-repeat;
+      background: url(../imgs/page_1/tncWorld/yazhou.png) no-repeat;
       width: 395px;
       height: 352px;
-      left: 572px;
-      top: 128px; }
+      left: -183px;
+      top: -75px; }
     #tncWorld .world_a .world_nanmei {
-      background: url(../imgs/tncWorld/nanmei.png) no-repeat;
+      background: url(../imgs/page_1/tncWorld/nanmei.png) no-repeat;
       width: 157px;
       height: 227px;
-      left: 201px;
-      top: 260px; }
+      left: -66px;
+      top: -115px; }
     #tncWorld .world_a .world_feizhou {
-      background: url(../imgs/tncWorld/feizhou.png) no-repeat;
+      background: url(../imgs/page_1/tncWorld/feizhou.png) no-repeat;
       width: 186px;
       height: 207px;
-      left: 432px;
-      top: 190px; }
+      left: -114px;
+      top: -104px; }
     #tncWorld .world_a .map_div {
       position: absolute;
       display: block;
@@ -194,7 +195,14 @@
       opacity: 0;
       _display: none;
       zoom: 1;
-      font-size: 0; }
+      font-size: 0;
+      transition: opacity 0.5s linear;
+      -moz-transition: opacity 0.5s linear;
+      /* Firefox 4 */
+      -webkit-transition: opacity 0.5s linear;
+      /* Safari 和 Chrome */
+      -o-transition: opacity 0.5s linear;
+      /* Opera */ }
     #tncWorld .world_a .bm_mapbtn {
       width: 21px;
       height: 33px;
@@ -203,8 +211,10 @@
       margin-left: -11px; }
       #tncWorld .world_a .bm_mapbtn .bm_span {
         background-color: rgba(51, 204, 255, 0.65);
-        background-image: url(../imgs/tncWorld/text_bg_1.jpg); }
+        background-image: url(../imgs/page_1/tncWorld/text_bg_1.jpg); }
       #tncWorld .world_a .bm_mapbtn .bm_span:hover {
+        background-color: #33ccff; }
+      #tncWorld .world_a .bm_mapbtn:hover span {
         background-color: #33ccff; }
       #tncWorld .world_a .bm_mapbtn .circle {
         background-color: rgba(51, 204, 255, 0.6); }
@@ -212,7 +222,14 @@
       position: absolute;
       border-radius: 100px;
       opacity: 1;
-      transform: matrix(1, 0, 0, 1, 0, 0); }
+      transform: matrix(1, 0, 0, 1, 0, 0);
+      transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+      /* Firefox 4 */
+      -webkit-transition: all 0.5s linear;
+      /* Safari 和 Chrome */
+      -o-transition: all 0.5s linear;
+      /* Opera */ }
     #tncWorld .world_a .bm_cc1 {
       width: 70px;
       height: 70px;
@@ -279,8 +296,10 @@
       margin-left: -11px; }
       #tncWorld .world_a .oz_mapbtn .oz_span {
         background-color: rgba(240, 72, 72, 0.65);
-        background-image: url(../imgs/tncWorld/text_bg_2.jpg); }
+        background-image: url(../imgs/page_1/tncWorld/text_bg_2.jpg); }
       #tncWorld .world_a .oz_mapbtn .oz_span:hover {
+        background-color: #f04848; }
+      #tncWorld .world_a .oz_mapbtn:hover span {
         background-color: #f04848; }
       #tncWorld .world_a .oz_mapbtn .oz_cc1 {
         background: rgba(240, 72, 72, 0.6);
@@ -304,8 +323,10 @@
       margin-left: -11px; }
       #tncWorld .world_a .yt_mapbtn .yt_span {
         background-color: rgba(124, 227, 21, 0.65);
-        background-image: url(../imgs/tncWorld/text_bg_3.jpg); }
+        background-image: url(../imgs/page_1/tncWorld/text_bg_3.jpg); }
       #tncWorld .world_a .yt_mapbtn .yt_span:hover {
+        background-color: #7ce315; }
+      #tncWorld .world_a .yt_mapbtn:hover span {
         background-color: #7ce315; }
       #tncWorld .world_a .yt_mapbtn .yt_cc1 {
         background: rgba(124, 227, 21, 0.6);
@@ -339,8 +360,10 @@
       margin-left: -11px; }
       #tncWorld .world_a .nm_mapbtn .nm_span {
         background-color: rgba(255, 204, 0, 0.65);
-        background-image: url(../imgs/tncWorld/text_bg_5.jpg); }
+        background-image: url(../imgs/page_1/tncWorld/text_bg_5.jpg); }
       #tncWorld .world_a .nm_mapbtn .nm_span:hover {
+        background-color: #ffcc00; }
+      #tncWorld .world_a .nm_mapbtn:hover span {
         background-color: #ffcc00; }
       #tncWorld .world_a .nm_mapbtn .nm_cc1 {
         background: rgba(255, 204, 0, 0.6);
@@ -366,8 +389,10 @@
       margin-left: -11px; }
       #tncWorld .world_a .fz_mapbtn .fz_span {
         background-color: rgba(255, 153, 51, 0.65);
-        background-image: url(../imgs/tncWorld/text_bg_4.jpg); }
+        background-image: url(../imgs/page_1/tncWorld/text_bg_4.jpg); }
       #tncWorld .world_a .fz_mapbtn .fz_span:hover {
+        background-color: #ff9933; }
+      #tncWorld .world_a .fz_mapbtn:hover span {
         background-color: #ff9933; }
       #tncWorld .world_a .fz_mapbtn .fz_cc1 {
         background-color: rgba(255, 153, 51, 0.6);

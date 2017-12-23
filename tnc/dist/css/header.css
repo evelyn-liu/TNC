@@ -34,7 +34,7 @@
     .centerMenu ul .nav .icon {
       width: 100%;
       height: 100%;
-      background: url(../imgs/nav.png) no-repeat;
+      background: url(../imgs/nav/nav.png) no-repeat;
       display: block; }
     .centerMenu ul .nav .nav_sub {
       display: none; }
@@ -200,7 +200,7 @@
     .rightMenu ul .nav .icon {
       width: 100%;
       height: 100%;
-      background: url(../imgs/nav.png) no-repeat;
+      background: url(../imgs/nav/nav.png) no-repeat;
       display: block; }
   .rightMenu ul .nav8 .icon {
     background-position: -593px -11px; }
@@ -243,7 +243,7 @@
           width: 100%; }
   .rightMenu ul .nav9:hover .icon {
     background-color: #ffffff;
-    background: url(../imgs/r_2.jpg) no-repeat;
+    background: url(../imgs/nav/r_2.jpg) no-repeat;
     box-shadow: rgba(0, 0, 0, 0.35) 2px 2px 4px 0px; }
   .rightMenu ul .nav9:hover .nav_sub {
     display: block;

@@ -28,7 +28,6 @@
         margin-top: -24px;
         display: block;
         position: absolute;
-
     }
     .home_more:hover {
         background-color: #14965a;
@@ -48,7 +47,7 @@
     }
 }
 
-.a_btn{
+.a_btn {
     font-size: 16px;
     color: #fff;
     line-height: 1.75;
@@ -60,23 +59,27 @@
     border-radius: 3px;
     vertical-align: middle;
 }
-.T_1{
+
+.T_1 {
     color: #fff;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
-.T_t{
+
+.T_t {
     font-size: 24px;
     color: #fff;
     margin-bottom: 10px;
     font-style: italic;
     font-weight: bold;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
-.T{
+
+.T {
     font-size: 13px;
     line-height: 1.75;
 }
-.B_more{
+
+.B_more {
     width: 95px;
     height: 24px;
     display: block;
@@ -84,7 +87,7 @@
     right: 0px;
     top: 0px;
     font-size: 0;
-    .area{
+    .area {
         position: absolute;
         right: 0px;
         top: 0px;
@@ -96,8 +99,7 @@
         z-index: 1;
         cursor: pointer;
     }
-
-    .hover{
+    .hover {
         position: absolute;
         right: 12px;
         top: 0px;
@@ -107,21 +109,19 @@
         height: 24px;
         width: 0px;
         cursor: pointer;
-        transition:width 0.5s;
-        -webkit-transition:width 0.5s; /* Safari */
-        
+        transition: width 0.5s;
+        -webkit-transition: width 0.5s;
+        /* Safari */
     }
-
 }
-
 
 #tncChina {
     .china_bg {
         width: 100%;
         height: 105%;
     }
-    .china_p{
-        background: url(../imgs/icon_map.png) 0px center no-repeat;
+    .china_p {
+        background: url(../imgs/page_1/tncChina/icon_map.png) 0px center no-repeat;
         width: 778px;
         left: 50%;
         top: 50%;
@@ -129,22 +129,20 @@
         margin-top: -54px;
         position: absolute;
         padding-left: 120px;
-        
-        h1{
+        h1 {
             line-height: 1.75;
         }
     }
-    .china_p:hover .hover{
-       width: 83px;
+    .china_p:hover .hover {
+        width: 83px;
     }
-
-    .china_a{
+    .china_a {
         left: 50%;
         bottom: 180px;
         margin-top: -24px;
         text-align: center;
         position: absolute;
-        .china_btn{
+        .china_btn {
             padding: 10px;
             width: 200px;
             display: inline-block;
@@ -152,12 +150,14 @@
         }
     }
 }
+
 @media(max-width:1280px) {
     .china_a {
         width: 1000px;
         margin-left: -500px;
     }
 }
+
 @media(min-width:1280px) {
     .china_a {
         width: 1280px;
@@ -165,13 +165,12 @@
     }
 }
 
-#tncWorld{
-    background: url(../imgs/tncWorld/world_bg.jpg) 0px 0px repeat;
+#tncWorld {
+    background: url(../imgs/page_1/tncWorld/world_bg.jpg) 0px 0px repeat;
     overflow: auto;
-
-    .world_p{
+    .world_p {
         width: 778px;
-        background: url(../imgs/tncWorld/worldicon_dot.png) 0px center no-repeat;
+        background: url(../imgs/page_1/tncWorld/worldicon_dot.png) 0px center no-repeat;
         padding-left: 120px;
         left: 50%;
         top: 50%;
@@ -180,56 +179,52 @@
         margin-top: -59px;
         position: absolute;
     }
-    .world_p:hover .hover{
+    .world_p:hover .hover {
         width: 83px;
-     }
-
-     .world_a{
+    }
+    .world_a {
         width: 996px;
         height: 507px;
-        background: url(../imgs/tncWorld/world_map.png) 0px 0px no-repeat;
+        background: url(../imgs/page_1/tncWorld/world_map.png) 0px 0px no-repeat;
         left: 50%;
         top: 70%;
         margin-left: -498px;
         position: absolute;
-
-        .world_beimei{
-            background: url(../imgs/tncWorld/beimei.png) no-repeat;
+        .world_beimei {
+            background: url(../imgs/page_1/tncWorld/beimei.png) no-repeat;
             width: 316px;
             height: 274px;
-            top: 8px;
-            left: 0;
+            top: -124px;
+            left: -158px
         }
-        .world_ouzhou{
-            background: url(../imgs/tncWorld/ouzhou.png) no-repeat;
+        .world_ouzhou {
+            background: url(../imgs/page_1/tncWorld/ouzhou.png) no-repeat;
             width: 150px;
             height: 209px;
-            left: 451px;
-            top: 6px;
+            left: -85px;
+            top: -116px;
         }
-        .world_yatai{
-            background: url(../imgs/tncWorld/yazhou.png) no-repeat;
+        .world_yatai {
+            background: url(../imgs/page_1/tncWorld/yazhou.png) no-repeat;
             width: 395px;
             height: 352px;
-            left: 572px;
-            top: 128px
+            left: -183px;
+            top: -75px;
         }
-        .world_nanmei{
-            background: url(../imgs/tncWorld/nanmei.png) no-repeat;
+        .world_nanmei {
+            background: url(../imgs/page_1/tncWorld/nanmei.png) no-repeat;
             width: 157px;
             height: 227px;
-            left: 201px;
-            top: 260px;
+            left: -66px;
+            top: -115px;
         }
-        .world_feizhou{
-            background: url(../imgs/tncWorld/feizhou.png) no-repeat;
+        .world_feizhou {
+            background: url(../imgs/page_1/tncWorld/feizhou.png) no-repeat;
             width: 186px;
             height: 207px;
-            left: 432px;
-            top: 190px;
-
+            left: -114px;
+            top: -104px;
         }
-
         .map_div {
             position: absolute;
             display: block;
@@ -239,54 +234,51 @@
             _display: none;
             zoom: 1;
             font-size: 0;
-            // transition: opacity 0.5s linear;
-            // -moz-transition: opacity 0.5s linear;	/* Firefox 4 */
-            // -webkit-transition: opacity 0.5s linear;	/* Safari 和 Chrome */
-            // -o-transition: opacity 0.5s linear;	/* Opera */
-        }
-        // .map_png:hover{
+            transition: opacity 0.5s linear;
+            -moz-transition: opacity 0.5s linear;
+            /* Firefox 4 */
+            -webkit-transition: opacity 0.5s linear;
+            /* Safari 和 Chrome */
+            -o-transition: opacity 0.5s linear;
+            /* Opera */
+        } // .map_png:hover{
         //     opacity: 1;
         // }
-
-
-// 北美
-        .bm_mapbtn{
+        // 北美
+        .bm_mapbtn {
             width: 21px;
             height: 33px;
             left: 17%;
             top: 26%;
             margin-left: -11px;
-
-            .bm_span{
-                background-color: rgba(51,204,255,0.65);
-                background-image: url(../imgs/tncWorld/text_bg_1.jpg);
+            .bm_span {
+                background-color: rgba(51, 204, 255, 0.65);
+                background-image: url(../imgs/page_1/tncWorld/text_bg_1.jpg);
             }
-            .bm_span:hover{
-                background-color: rgba(51,204,255,1);
-               
+            .bm_span:hover {
+                background-color: rgba(51, 204, 255, 1);
             }
-
-            .circle{
-                background-color: rgba(51,204,255,0.6);
-               
+            &:hover span {
+                background-color: rgba(51, 204, 255, 1);
             }
-           
-            
+            .circle {
+                background-color: rgba(51, 204, 255, 0.6);
+            }
         }
-        .circle{
+        .circle {
             position: absolute;
             border-radius: 100px;
             opacity: 1;
             transform: matrix(1, 0, 0, 1, 0, 0);
-            // transition: all 0.5s linear;
-            // -moz-transition: all 0.5s linear;	/* Firefox 4 */
-            // -webkit-transition: all 0.5s linear;	/* Safari 和 Chrome */
-            // -o-transition: all 0.5s linear;	/* Opera */
+            transition: all 0.5s linear;
+            -moz-transition: all 0.5s linear;
+            /* Firefox 4 */
+            -webkit-transition: all 0.5s linear;
+            /* Safari 和 Chrome */
+            -o-transition: all 0.5s linear;
+            /* Opera */
         }
-
-       
-     
-        .bm_cc1{
+        .bm_cc1 {
             width: 70px;
             height: 70px;
             left: 80px;
@@ -294,7 +286,7 @@
             margin-left: -35px;
             margin-top: -35px;
         }
-        .bm_cc2{
+        .bm_cc2 {
             width: 100px;
             height: 100px;
             left: 33px;
@@ -302,7 +294,7 @@
             margin-left: -50px;
             margin-top: -50px;
         }
-        .bm_cc3{
+        .bm_cc3 {
             width: 120px;
             height: 120px;
             left: -23px;
@@ -310,7 +302,7 @@
             margin-left: -60px;
             margin-top: -60px;
         }
-        .bm_cc4{
+        .bm_cc4 {
             width: 180px;
             height: 180px;
             left: -26px;
@@ -318,7 +310,7 @@
             margin-left: -90px;
             margin-top: -90px;
         }
-        .wd_text{
+        .wd_text {
             position: absolute;
             display: block;
             padding: 0px 38px 0px 0px;
@@ -331,80 +323,77 @@
             line-height: 34px;
             text-align: center;
             z-index: 1;
-            color: white;
+            color: white; // opacity: 0.65;
             background-position: right center;
             background-repeat: no-repeat;
-            box-shadow: -1px 1px 2px rgba(0,0,0,0.35);
+            box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.35);
             transition: background-color 0.35s;
             -moz-transition: background-color 0.35s;
             -webkit-transition: background-color 0.35s;
             -o-transition: background-color 0.35s;
             -ms-transition: background-color 0.35s;
         }
-        .wd_mapbtn{
+        .wd_mapbtn {
             cursor: pointer;
             position: absolute;
         }
-        .wd_icon{
+        .wd_icon {
             position: absolute;
             top: 0px;
             left: 0px;
             z-index: 1;
-        }
-
-// 欧洲
-        .oz_mapbtn{
+        } // 欧洲
+        .oz_mapbtn {
             width: 21px;
             height: 33px;
             left: 55%;
             top: 24%;
             margin-left: -11px;
-
-            .oz_span{
-                background-color: rgba(240,72,72,0.65);
-                background-image: url(../imgs/tncWorld/text_bg_2.jpg)
+            .oz_span {
+                background-color: rgba(240, 72, 72, 0.65);
+                background-image: url(../imgs/page_1/tncWorld/text_bg_2.jpg)
             }
-
-            .oz_span:hover{
-                background-color: rgba(240,72,72,1);
+            .oz_span:hover {
+                background-color: rgba(240, 72, 72, 1);
             }
-
-            .oz_cc1{
-                background: rgba(240,72,72,0.6);
+            &:hover span {
+                background-color: rgba(240, 72, 72, 1);
+            }
+            .oz_cc1 {
+                background: rgba(240, 72, 72, 0.6);
                 width: 70px;
                 height: 70px;
-                left: 29px;
-                // top: 58px;
+                left: 29px; // top: 58px;
                 margin-left: -35px;
                 margin-right: -35px;
             }
-            .oz_cc2{
-                background: rgba(240,72,72,0.6);
+            .oz_cc2 {
+                background: rgba(240, 72, 72, 0.6);
                 width: 100px;
                 height: 100px;
-                left: -34px;
-                // top: 44px;
+                left: -34px; // top: 44px;
                 margin-left: -50px;
                 margin-top: -50px;
             }
         }
-
-        .yt_mapbtn{
+        .yt_mapbtn {
             width: 21px;
             height: 33px;
             left: 77%;
             top: 40%;
             margin-left: -11px;
-
-            .yt_span{
-                background-color: rgba(124,227,21,0.65);
-                background-image: url(../imgs/tncWorld/text_bg_3.jpg);
+            .yt_span {
+                background-color: rgba(124, 227, 21, 0.65);
+                background-image: url(../imgs/page_1/tncWorld/text_bg_3.jpg);
             }
-            .yt_span:hover{
-                background-color: rgba(124,227,21,1);
+            .yt_span:hover {
+                background-color: rgba(124, 227, 21, 1);
             }
-            .yt_cc1{
-                background:rgba(124,227,21,0.6);
+            &:hover span {
+                background-color: rgba(124, 227, 21, 1);
+            }
+            .yt_cc1 {
+                background: rgba(124, 227, 21, 0.6);
                 width: 40px;
                 height: 40px;
                 left: -44px;
@@ -412,8 +401,8 @@
                 margin-left: -20px;
                 margin-right: -20px;
             }
-            .yt_cc2{
-                background:rgba(124,227,21,0.6);
+            .yt_cc2 {
+                background: rgba(124, 227, 21, 0.6);
                 width: 100px;
                 height: 100px;
                 left: 23px;
@@ -421,8 +410,8 @@
                 margin-left: -50px;
                 margin-top: -50px;
             }
-            .yt_cc3{
-                background:rgba(124,227,21,0.6);
+            .yt_cc3 {
+                background: rgba(124, 227, 21, 0.6);
                 width: 120px;
                 height: 120px;
                 left: 9px;
@@ -431,31 +420,33 @@
                 margin-top: -60px;
             }
         }
-        .nm_mapbtn{
+        .nm_mapbtn {
             width: 21px;
             height: 33px;
             left: 28%;
             top: 74%;
             margin-left: -11px;
-
-            .nm_span{
-               background-color: rgba(255,204,0,0.65);
-               background-image: url(../imgs/tncWorld/text_bg_5.jpg);
+            .nm_span {
+                background-color: rgba(255, 204, 0, 0.65);
+                background-image: url(../imgs/page_1/tncWorld/text_bg_5.jpg);
             }
-            .nm_span:hover{
-                background-color: rgba(255,204,0,1);
+            .nm_span:hover {
+                background-color: rgba(255, 204, 0, 1);
             }
-            .nm_cc1{
-               background: rgba(255,204,0,0.6);
-               width: 70px;
-               height: 70px;
-               left: -4px;
-               top: 80px;
-               margin-left: -35px;
-               margin-top: -35px;
+            &:hover span {
+                background-color: rgba(255, 204, 0, 1);
             }
-            .nm_cc2{
-                background: rgba(255,204,0,0.6);
+            .nm_cc1 {
+                background: rgba(255, 204, 0, 0.6);
+                width: 70px;
+                height: 70px;
+                left: -4px;
+                top: 80px;
+                margin-left: -35px;
+                margin-top: -35px;
+            }
+            .nm_cc2 {
+                background: rgba(255, 204, 0, 0.6);
                 width: 100px;
                 height: 100px;
                 left: 28px;
@@ -464,23 +455,24 @@
                 margin-top: -50px;
             }
         }
-        .fz_mapbtn{
+        .fz_mapbtn {
             width: 21px;
             height: 33px;
             left: 56%;
             top: 58%;
             margin-left: -11px;
-
-            .fz_span{
-                background-color: rgba(255,153,51,0.65);
-                background-image: url(../imgs/tncWorld/text_bg_4.jpg);
+            .fz_span {
+                background-color: rgba(255, 153, 51, 0.65);
+                background-image: url(../imgs/page_1/tncWorld/text_bg_4.jpg);
             }
-            .fz_span:hover{
-                background-color: rgba(255,153,51,1);
+            .fz_span:hover {
+                background-color: rgba(255, 153, 51, 1);
             }
-
-            .fz_cc1{
-                background-color: rgba(255,153,51,0.6);
+            &:hover span {
+                background-color: rgba(255, 153, 51, 1);
+            }
+            .fz_cc1 {
+                background-color: rgba(255, 153, 51, 0.6);
                 width: 70px;
                 height: 70px;
                 left: 13px;
@@ -488,8 +480,8 @@
                 margin-left: -35px;
                 margin-top: -35px;
             }
-            .fz_cc2{
-                background-color: rgba(255,153,51,0.6);
+            .fz_cc2 {
+                background-color: rgba(255, 153, 51, 0.6);
                 width: 100px;
                 height: 100px;
                 left: -9px;
@@ -498,6 +490,9 @@
                 margin-top: -50px;
             }
         }
-
-     }
+    }
 }
+
+// #tncEvent{
+//     background: url()
+// }
