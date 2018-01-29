@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #home .home_logo {
   width: 237px;
   height: 101px;
@@ -101,7 +102,7 @@
   width: 100%;
   height: 105%; }
 #tncChina .china_p {
-  background: url(../imgs/icon_map.png) 0px center no-repeat;
+  background: url(../imgs/page_1/tncChina/icon_map.png) 0px center no-repeat;
   width: 778px;
   left: 50%;
   top: 50%;
@@ -134,11 +135,11 @@
     width: 1280px;
     margin-left: -640px; } }
 #tncWorld {
-  background: url(../imgs/tncWorld/world_bg.jpg) 0px 0px repeat;
+  background: url(../imgs/page_1/tncWorld/world_bg.jpg) 0px 0px repeat;
   overflow: auto; }
   #tncWorld .world_p {
     width: 778px;
-    background: url(../imgs/tncWorld/worldicon_dot.png) 0px center no-repeat;
+    background: url(../imgs/page_1/tncWorld/worldicon_dot.png) 0px center no-repeat;
     padding-left: 120px;
     left: 50%;
     top: 50%;
@@ -151,41 +152,41 @@
   #tncWorld .world_a {
     width: 996px;
     height: 507px;
-    background: url(../imgs/tncWorld/world_map.png) 0px 0px no-repeat;
+    background: url(../imgs/page_1/tncWorld/world_map.png) 0px 0px no-repeat;
     left: 50%;
     top: 70%;
     margin-left: -498px;
     position: absolute; }
     #tncWorld .world_a .world_beimei {
-      background: url(../imgs/tncWorld/beimei.png) no-repeat;
+      background: url(../imgs/page_1/tncWorld/beimei.png) no-repeat;
       width: 316px;
       height: 274px;
-      top: 8px;
-      left: 0; }
+      top: -124px;
+      left: -158px; }
     #tncWorld .world_a .world_ouzhou {
-      background: url(../imgs/tncWorld/ouzhou.png) no-repeat;
+      background: url(../imgs/page_1/tncWorld/ouzhou.png) no-repeat;
       width: 150px;
       height: 209px;
-      left: 451px;
-      top: 6px; }
+      left: -85px;
+      top: -116px; }
     #tncWorld .world_a .world_yatai {
-      background: url(../imgs/tncWorld/yazhou.png) no-repeat;
+      background: url(../imgs/page_1/tncWorld/yazhou.png) no-repeat;
       width: 395px;
       height: 352px;
-      left: 572px;
-      top: 128px; }
+      left: -183px;
+      top: -75px; }
     #tncWorld .world_a .world_nanmei {
-      background: url(../imgs/tncWorld/nanmei.png) no-repeat;
+      background: url(../imgs/page_1/tncWorld/nanmei.png) no-repeat;
       width: 157px;
       height: 227px;
-      left: 201px;
-      top: 260px; }
+      left: -66px;
+      top: -115px; }
     #tncWorld .world_a .world_feizhou {
-      background: url(../imgs/tncWorld/feizhou.png) no-repeat;
+      background: url(../imgs/page_1/tncWorld/feizhou.png) no-repeat;
       width: 186px;
       height: 207px;
-      left: 432px;
-      top: 190px; }
+      left: -114px;
+      top: -104px; }
     #tncWorld .world_a .map_div {
       position: absolute;
       display: block;
@@ -194,7 +195,14 @@
       opacity: 0;
       _display: none;
       zoom: 1;
-      font-size: 0; }
+      font-size: 0;
+      transition: opacity 0.5s linear;
+      -moz-transition: opacity 0.5s linear;
+      /* Firefox 4 */
+      -webkit-transition: opacity 0.5s linear;
+      /* Safari 和 Chrome */
+      -o-transition: opacity 0.5s linear;
+      /* Opera */ }
     #tncWorld .world_a .bm_mapbtn {
       width: 21px;
       height: 33px;
@@ -203,8 +211,10 @@
       margin-left: -11px; }
       #tncWorld .world_a .bm_mapbtn .bm_span {
         background-color: rgba(51, 204, 255, 0.65);
-        background-image: url(../imgs/tncWorld/text_bg_1.jpg); }
+        background-image: url(../imgs/page_1/tncWorld/text_bg_1.jpg); }
       #tncWorld .world_a .bm_mapbtn .bm_span:hover {
+        background-color: #33ccff; }
+      #tncWorld .world_a .bm_mapbtn:hover span {
         background-color: #33ccff; }
       #tncWorld .world_a .bm_mapbtn .circle {
         background-color: rgba(51, 204, 255, 0.6); }
@@ -212,7 +222,14 @@
       position: absolute;
       border-radius: 100px;
       opacity: 1;
-      transform: matrix(1, 0, 0, 1, 0, 0); }
+      transform: matrix(1, 0, 0, 1, 0, 0);
+      transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+      /* Firefox 4 */
+      -webkit-transition: all 0.5s linear;
+      /* Safari 和 Chrome */
+      -o-transition: all 0.5s linear;
+      /* Opera */ }
     #tncWorld .world_a .bm_cc1 {
       width: 70px;
       height: 70px;
@@ -279,8 +296,10 @@
       margin-left: -11px; }
       #tncWorld .world_a .oz_mapbtn .oz_span {
         background-color: rgba(240, 72, 72, 0.65);
-        background-image: url(../imgs/tncWorld/text_bg_2.jpg); }
+        background-image: url(../imgs/page_1/tncWorld/text_bg_2.jpg); }
       #tncWorld .world_a .oz_mapbtn .oz_span:hover {
+        background-color: #f04848; }
+      #tncWorld .world_a .oz_mapbtn:hover span {
         background-color: #f04848; }
       #tncWorld .world_a .oz_mapbtn .oz_cc1 {
         background: rgba(240, 72, 72, 0.6);
@@ -304,8 +323,10 @@
       margin-left: -11px; }
       #tncWorld .world_a .yt_mapbtn .yt_span {
         background-color: rgba(124, 227, 21, 0.65);
-        background-image: url(../imgs/tncWorld/text_bg_3.jpg); }
+        background-image: url(../imgs/page_1/tncWorld/text_bg_3.jpg); }
       #tncWorld .world_a .yt_mapbtn .yt_span:hover {
+        background-color: #7ce315; }
+      #tncWorld .world_a .yt_mapbtn:hover span {
         background-color: #7ce315; }
       #tncWorld .world_a .yt_mapbtn .yt_cc1 {
         background: rgba(124, 227, 21, 0.6);
@@ -339,8 +360,10 @@
       margin-left: -11px; }
       #tncWorld .world_a .nm_mapbtn .nm_span {
         background-color: rgba(255, 204, 0, 0.65);
-        background-image: url(../imgs/tncWorld/text_bg_5.jpg); }
+        background-image: url(../imgs/page_1/tncWorld/text_bg_5.jpg); }
       #tncWorld .world_a .nm_mapbtn .nm_span:hover {
+        background-color: #ffcc00; }
+      #tncWorld .world_a .nm_mapbtn:hover span {
         background-color: #ffcc00; }
       #tncWorld .world_a .nm_mapbtn .nm_cc1 {
         background: rgba(255, 204, 0, 0.6);
@@ -366,8 +389,10 @@
       margin-left: -11px; }
       #tncWorld .world_a .fz_mapbtn .fz_span {
         background-color: rgba(255, 153, 51, 0.65);
-        background-image: url(../imgs/tncWorld/text_bg_4.jpg); }
+        background-image: url(../imgs/page_1/tncWorld/text_bg_4.jpg); }
       #tncWorld .world_a .fz_mapbtn .fz_span:hover {
+        background-color: #ff9933; }
+      #tncWorld .world_a .fz_mapbtn:hover span {
         background-color: #ff9933; }
       #tncWorld .world_a .fz_mapbtn .fz_cc1 {
         background-color: rgba(255, 153, 51, 0.6);
@@ -385,5 +410,375 @@
         top: 12px;
         margin-left: -50px;
         margin-top: -50px; }
+
+#proPlace .place_bg {
+  width: 100%;
+  height: 100%; }
+#proPlace .place_p {
+  width: 778px;
+  left: 50%;
+  top: 50%;
+  margin-left: -440px;
+  margin-top: -59px;
+  background: url(../imgs/page_2/place/icon_txt_1.png) 0px center no-repeat;
+  padding-left: 120px;
+  position: absolute; }
+#proPlace .place_p:hover .hover {
+  width: 83px; }
+#proPlace .place_a {
+  margin-top: -24px;
+  top: 70%;
+  text-align: center;
+  position: absolute;
+  width: 100%; }
+  #proPlace .place_a .p_b:hover {
+    background-color: #53b352; }
+  #proPlace .place_a .done {
+    background-color: #0066cb; }
+  #proPlace .place_a .done:hover {
+    background-color: #2b9ae1; }
+
+.p_b {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.75;
+  background-color: #339933;
+  font-style: italic;
+  text-decoration: none;
+  letter-spacing: 0px;
+  border-radius: 3px;
+  padding: 10px;
+  width: 200px;
+  display: inline-block;
+  margin: 0px 12px 20px;
+  vertical-align: middle; }
+
+.done {
+  background-position: 20px center;
+  background-repeat: no-repeat;
+  background-image: url(../imgs/page_2/place/done.png); }
+
+#proWater .water_bg {
+  width: 100%;
+  height: 100%; }
+#proWater .water_p {
+  width: 778px;
+  left: 50%;
+  top: 50%;
+  margin-left: -440px;
+  margin-top: -48px;
+  background: url(../imgs/page_2/icon_txt_2.png) 0px center no-repeat;
+  padding-left: 120px;
+  position: absolute; }
+#proWater .water_p:hover .hover {
+  width: 83px; }
+#proWater .water_a {
+  width: 100%;
+  top: 70%;
+  margin-top: -24px;
+  left: 0%;
+  text-align: center;
+  position: absolute; }
+#proWater .p_b:hover {
+  background-color: #53b352; }
+
+#proAotemosphere .pa_bg {
+  width: 100%;
+  height: 100%; }
+#proAotemosphere .pa_p {
+  width: 778px;
+  left: 50%;
+  top: 50%;
+  margin-left: -440px;
+  margin-top: -59px;
+  background: url(../imgs/page_2/icon_txt_3.png) 0px center no-repeat;
+  padding-left: 120px;
+  position: absolute; }
+#proAotemosphere .pa_a {
+  width: 100%;
+  top: 70%;
+  margin-top: -24px;
+  left: 0%;
+  text-align: center;
+  position: absolute; }
+#proAotemosphere .p_b:hover {
+  background-color: #53b352; }
+
+#proSea .ps_bg {
+  width: 100%;
+  height: 100%; }
+#proSea .ps_p {
+  width: 778px;
+  left: 50%;
+  top: 50%;
+  margin-left: -440px;
+  margin-top: -59px;
+  background: url(../imgs/page_2/icon_txt_4.png) 0px center no-repeat;
+  padding-left: 120px;
+  position: absolute; }
+#proSea .ps_p:hover .hover {
+  width: 83px; }
+#proSea .ps_a {
+  width: 100%;
+  top: 70%;
+  margin-top: -24px;
+  left: 0%;
+  text-align: center;
+  position: absolute; }
+#proSea .p_b:hover {
+  background-color: #53b352; }
+
+#sciFunc .sf_bg {
+  width: 100%;
+  height: 100%; }
+#sciFunc .sf_p {
+  width: 778px;
+  left: 50%;
+  top: 50%;
+  margin-left: -440px;
+  margin-top: -59px;
+  background: url(../imgs/page_3/icon_txt_1.png) 0px center no-repeat;
+  padding-left: 120px;
+  position: absolute; }
+#sciFunc .sf_p:hover .hover {
+  width: 83px; }
+#sciFunc .sf_a {
+  width: 100%;
+  top: 70%;
+  margin-top: -24px;
+  left: 0%;
+  text-align: center;
+  position: absolute; }
+#sciFunc .s_b:hover {
+  background-color: #2c9be2; }
+
+.s_b {
+  ont-size: 16px;
+  color: #fff;
+  line-height: 1.75;
+  background-color: #0883d1;
+  font-style: italic;
+  text-decoration: none;
+  letter-spacing: 0px;
+  border-radius: 3px;
+  padding: 10px;
+  width: 220px;
+  display: inline-block;
+  margin: 0px 12px 20px;
+  vertical-align: middle; }
+
+#sciInfo .si_bg {
+  width: 100%;
+  height: 100%; }
+#sciInfo .si_p {
+  width: 778px;
+  left: 50%;
+  top: 50%;
+  margin-left: -440px;
+  margin-top: -59px;
+  background: url(../imgs/page_3/icon_txt_2.png) 0px center no-repeat;
+  padding-left: 120px;
+  position: absolute; }
+#sciInfo .si_a {
+  width: 100%;
+  top: 70%;
+  margin-top: -24px;
+  left: 0%;
+  text-align: center;
+  position: absolute; }
+#sciInfo .s_b:hover {
+  background-color: #2c9be2; }
+
+#sciProtect .sp_bg {
+  width: 100%;
+  height: 100%; }
+#sciProtect .sp_p {
+  width: 778px;
+  left: 50%;
+  top: 50%;
+  margin-left: -440px;
+  margin-top: -59px;
+  background: url(../imgs/page_3/icon_txt_3.png) 0px center no-repeat;
+  padding-left: 120px;
+  position: absolute; }
+#sciProtect .sp_a {
+  width: 100%;
+  top: 70%;
+  margin-top: -24px;
+  left: 0%;
+  text-align: center;
+  position: absolute; }
+#sciProtect .s_b:hover {
+  background-color: #2c9be2; }
+
+.view_body {
+  width: 100%;
+  height: 70%;
+  display: block;
+  position: absolute;
+  left: 0%;
+  top: 0%; }
+  .view_body .view_content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%; }
+  .view_body .view_list {
+    width: 1000px;
+    height: 200px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+    top: 50%;
+    margin-top: -50px;
+    overflow: hidden; }
+  .view_body .view_ul {
+    width: 1000px;
+    height: 200px;
+    display: block;
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    list-style: none; }
+  .view_body .view_li {
+    float: left;
+    margin: 0px 8px;
+    position: relative;
+    display: inline;
+    list-style: none; }
+  .view_body .B_left {
+    position: absolute;
+    left: 50%;
+    margin-left: -565px;
+    top: 50%;
+    margin-top: 5px;
+    opacity: 0.75; }
+    .view_body .B_left img {
+      padding: 20px; }
+  .view_body .B_right {
+    position: absolute;
+    left: 50%;
+    margin-left: 500px;
+    top: 50%;
+    margin-top: 5px;
+    opacity: 0.75; }
+    .view_body .B_right img {
+      padding: 20px; }
+
+.view_foot {
+  width: 100%;
+  height: 30%;
+  background: 0px 0px repeat;
+  display: block;
+  position: absolute;
+  left: 0px;
+  bottom: 0px; }
+  .view_foot .foot_border {
+    width: 100%;
+    height: 8px;
+    left: 0px;
+    top: 0px;
+    display: block;
+    position: relative; }
+  .view_foot .foot_cursor {
+    width: 62px;
+    height: 32px;
+    left: 50%;
+    margin-left: -31px;
+    top: 0px;
+    display: block;
+    background: 0px bottom no-repeat;
+    position: absolute;
+    zoom: 1; }
+  .view_foot .foot_links {
+    width: 100%;
+    top: 50px;
+    left: 0%;
+    text-align: center;
+    position: absolute; }
+  .view_foot .foot_link {
+    font-size: 0;
+    width: 86px;
+    height: 116px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    margin: 0px 50px;
+    text-decoration: none; }
+  .view_foot .foot_link:hover {
+    background-position: 0px -116px; }
+
+#news {
+  background: #d4d8db; }
+  #news .view_body div:target {
+    z-index: 1; }
+  #news .news_a {
+    width: 234px;
+    height: 200px;
+    display: block;
+    background: url(../imgs/page_4/li_bg.jpg) 0px bottom repeat-x; }
+  #news .news_title {
+    width: 100%;
+    height: 28px;
+    display: block;
+    line-height: 28px;
+    font-size: 15px;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    zoom: 1;
+    white-space: nowrap;
+    _white-space: normal; }
+  #news .news_img {
+    width: 234px;
+    height: 140px;
+    display: block;
+    overflow: hidden;
+    background: url(../imgs/loading_gray.gif) center center no-repeat;
+    position: relative; }
+    #news .news_img img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 234px;
+      height: 180.96px;
+      margin-left: -117px;
+      margin-top: -90.48px; }
+  #news .news_date {
+    width: 100%;
+    height: 28px;
+    display: block;
+    line-height: 28px;
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    text-align: right;
+    font-family: 'din_b'; }
+  #news .news_text {
+    width: 100%;
+    height: 172px;
+    display: block;
+    position: absolute;
+    top: 28px;
+    left: 0px;
+    background: url(../imgs/page_4/text_bg.jpg) 0px 0px no-repeat;
+    overflow: hidden;
+    display: none;
+    _background-image: url(../imgs/page_4/text_bg.jpg); }
+  #news .view_foot {
+    background: url(../imgs/page_4/bg_1.jpg); }
+    #news .view_foot .foot_border {
+      background-color: #8a4e06; }
+      #news .view_foot .foot_border .foot_cursor {
+        background-image: url(../imgs/page_4/triangle.png); }
+    #news .view_foot #news_link_0 {
+      background-image: url(../imgs/page_4/menu_1.png); }
+    #news .view_foot #news_link_1 {
+      background-image: url(../imgs/page_4/menu_2.png); }
+    #news .view_foot #news_link_2 {
+      background-image: url(../imgs/page_4/menu_3.png); }
 
 /*# sourceMappingURL=content.css.map */

@@ -21,27 +21,27 @@
     <div class="centerMenu">
         <ul>
             <li class="nav0 nav" anchor="#home">
-                <a href="" class="icon"></a>
+                <a href="#home" class="icon"></a>
             </li>
             <li class="nav1 nav">
-                <a href="" class="icon"></a>
+                <a href="#tncChina" class="icon"></a>
                 <div class="nav_sub">
                     <span>了解TNC</span>
                     <ul>
-                        <li class="nav_f">TNC在中国</li>
-                        <li>TNC在全球</li>
-                        <li>TNC大事记</li>
+                        <li class="nav_f" >TNC在中国 <a href="#tncChina"></a></li>
+                        <li>TNC在全球<a href="#tncWorld"></a></li>
+                        <li>TNC大事记<a href="#tncEvent"></a></li>
                     </ul>
                 </div>
             </li>
             <li class="nav2 nav">
-                <a href="" class="icon"></a>
+                <a href="#proPlace" class="icon"></a>
                 <div class="nav_sub">
                     <span>保护项目</span>
                     <ul>
-                        <li class="nav_f">保护地</li>
-                        <li>淡水</li>
-                        <li>气候变化</li>
+                        <li class="nav_f">保护地<a href="#proPlace"></a></li>
+                        <li>淡水<a href="#proWater"></a></li>
+                        <li>气候变化<a href="#proAotemosphere"></a></li>
                         <li>保护无国界</li>
                         <li>中国全球保护基金</li>
                         <li>减少象牙消费项目</li>
@@ -49,18 +49,18 @@
                 </div>
             </li>
             <li class="nav3 nav">
-                <a href="" class="icon"></a>
+                <a href="#sciFunc" class="icon"></a>
                 <div class="nav_sub">
                     <span>保护科学</span>
                     <ul>
-                        <li class="nav_f">保护方法与工具</li>
-                        <li>信息服务</li>
-                        <li>保护科学</li>
+                        <li class="nav_f">保护方法与工具<a href="#sciFunc"></a></li>
+                        <li>信息服务<a href="#sciInfo"></a></li>
+                        <li>保护科学<a href="#sciProtect"></a></li>
                     </ul>
                 </div>
             </li>
             <li class="nav4 nav">
-                <a href="" class="icon"></a>
+                <a href="#news" class="icon"></a>
                 <div class="nav_sub">
                     <span>新闻中心</span>
                     <ul>
@@ -136,8 +136,8 @@
 <script src="../js/base/header.js"></script>
 	</div>
 
-	<div class="content">
-			<div id="home" class="view">
+	<div class="content" >
+			<div id="home" class="view current" data-index='0'>
     <div class="home_logo">
         <img src="../imgs/homepage/logo_2.jpg" alt="">
     </div>
@@ -232,13 +232,164 @@
     </div>
 </div>
 <div id="tncEvent" class="view"></div>
-<div id="newsCenter" class="view"></div>
-<div id="IntoTheNature" class="view"></div>
-<div id="myTNC" class="view"></div>
+
+<div id="proPlace" class="view">
+    <img class="place_bg" src="../imgs/page_2/place/bg_1.jpg" alt="">
+    <div class="place_p">
+        <h1 class="T_t ">保护地</h1>
+        <p class="T_1 T">
+           中国已建有2600多个自然保护区，受保护土地占国土面积的10%以上。为了更好地解决由于经费短缺、管理能力有限造成的生态问题，TNC 仍在持续探索不同保护地区理想的管理模式，先后在滇西北、四川、内蒙古等地开创保护地和生态修复项目，以提供中国自然保护的创新力量。
+        </p>
+        <a href="" class="B_more">
+            <div class="hover"></div>
+            <div class="area"></div>
+        </a>
+    </div>
+    <div class="place_a">
+        <a href="" class="a_btn p_b">云南</a>
+        <a href="" class="a_btn p_b">四川</a>
+        <a href="" class="a_btn p_b">内蒙古</a>
+        <a href="" class="a_btn p_b done">"蓝图"项目</a>
+    </div>
+</div>
+<div id="proWater" class="view">
+    <img class="water_bg" src="../imgs/page_2/bg_2.jpg" alt="">
+    <div class="water_p">
+        <h1 class="T_t ">淡水</h1>
+        <p class="T_1 T">
+            清洁的淡水，是日常生活不可或缺的资源。但专家们已经发出警告：在未来20年中，世界上将有超过一半的人口面临水资源短缺的威胁。TNC正在寻找有效的解决方法，在满足生存发展需求和保护淡水资源之间找到平衡。
+        </p>
+        <a href="" class="B_more">
+            <div class="hover"></div>
+            <div class="area"></div>
+        </a>
+    </div>
+    <div class="water_a">
+        <a href="" class="a_btn p_b">长江项目</a>
+        <a href="" class="a_btn p_b done">湿地</a>
+        <a href="" class="a_btn p_b ">城市水蓝图</a>
+    </div>
+</div>
+<div id="proAotemosphere" class="view">
+    <img class="pa_bg" src="../imgs/page_2/bg_3.jpg" alt="">
+    <div class="pa_p">
+        <h1 class="T_t ">气候变化</h1>
+        <p class="T_1 T">
+            全球气候变化加剧，对自然生态系统和人类带来巨大影响。TNC正努力利用基于生态的手段，预测气候变化的影响，增强人类和生态系统应对气候变化的能力，寻求以森林碳汇为代表的更多缓解气候变化的解决方案。
+        </p>
+    </div>
+    <div class="pa_a">
+        <a href="" class="a_btn p_b">长江项目</a>
+        <a href="" class="a_btn p_b ">湿地</a>
+        <a href="" class="a_btn p_b ">城市水蓝图</a>
+    </div>
+</div>
+<div id="proSea" class="view">
+    <img class="ps_bg" src="../imgs/page_2/bg_4.jpg" alt="">
+    <div class="ps_p">
+        <h1 class="T_t ">海洋</h1>
+        <p class="T_1 T">
+            清洁的点水，是日常生活不可或缺的资源。但是专家们已经发出警告；在未来20年中，世界上有超过一半的人口面临水资源短缺的威胁，所以我们呼吁大家保护水资源，保护海洋，保护水资源，世界上有超过一半的人口面世界上有超过一半的人口面。 
+        </p>
+        <a href="" class="B_more">
+            <div class="hover"></div>
+            <div class="area"></div>
+        </a>
+    </div>
+    <div class="ps_a">
+        <a href="" class="a_btn p_b">海洋保护知识中心</a>
+        <a href="" class="a_btn p_b ">中国海洋项目</a>
+    </div>
+</div>
+<div id="sciFunc" class="view">
+    <img class="sf_bg" src="../imgs/page_3/bg_1.jpg" alt="">
+    <div class="sf_p">
+        <h1 class="T_t ">保护方法与工具</h1>
+        <p class="T_1 T">
+            行之有效的保护方法和保护工具，可以帮助我们达到预期的保护效果。在过去的半个多世纪里，TNC逐步发展出一套全面、注重策略和实用性、并以科学为基础的保护工作方法——自然保护系统工程（CbD），并在其基础上衍生出如保护行动规划（CAP)，生态区域评估（ERA）等更多具体方法。
+        </p>
+        <a href="" class="B_more">
+            <div class="hover"></div>
+            <div class="area"></div>
+        </a>
+    </div>
+    <div class="sf_a">
+        <a href="" class="a_btn s_b">适应性管理方法</a>
+        <a href="" class="a_btn s_b ">保护行动计划书</a>
+        <a href="" class="a_btn s_b ">保护与开发兼顾</a>
+    </div>
+</div>
+<div id="sciInfo" class="view">
+    <img class="si_bg" src="../imgs/page_3/bg_2.jpg" alt="">
+    <div class="si_p">
+        <h1 class="T_t ">信息服务</h1>
+        <p class="T_1 T">TNC一直致力于与更多的生态保护爱好者、业内专家以及研究人员，分享我们的保护经验与信息。TNC希望，这个平台，能够为人们提供保护的最新数据和保护工具。
+        </p>
+    </div>
+    <div class="si_a">
+        <a href="" class="a_btn s_b">核心数据</a>
+        <a href="" class="a_btn s_b ">全球生态保护地图集</a>
+        <a href="" class="a_btn s_b ">常用工具</a>
+        <a href="" class="a_btn s_b ">气候变化分析向导</a>
+    </div>
+</div>
+<div id="sciProtect" class="view">
+    <img class="sp_bg" src="../imgs/page_3/bg_3.jpg" alt="">
+    <div class="sp_p">
+        <h1 class="T_t ">保护科学</h1>
+        <p class="T_1 T">向更多的人介绍生态保护工作的重要，不能仅依靠数据和图标，还需要集合社会学、心理学、传播学等多学科的知识，对艰涩的科学术语进行解读。点击“生态系统服务功能”和“人与生态保护”，了解 TNC 关于人类与环境相互依存关系的再思考。
+        </p>
+    </div>
+    <div class="sp_a">
+        <a href="" class="a_btn s_b">生态系统的服务</a>
+        <a href="" class="a_btn s_b ">人与生态的保护</a>
+    </div> 
+</div>
+<div id="news" class="view">
+    <div class="view_body">
+        <div class="view_content" id="view_content_0">
+            <div class="view_list"></div>
+            <a class="B_left view_btn">
+                <img src="../imgs/page_4/left.png" alt="">
+            </a>
+            <a class="B_right view_btn">
+                <img src="../imgs/page_4/right.png" alt="">
+            </a>
+        </div>
+        <div class="view_content" id="view_content_1">
+            <div class="view_list"></div>
+            <a class="B_left view_btn"></a>
+            <a class="B_right view_btn"></a>
+        </div>
+        <div class="view_content" id="view_content_2">
+            <div class="view_list"></div>
+            <a class="B_left view_btn"></a>
+            <a class="B_right view_btn"></a>
+        </div>
+    </div>
+    <div class="view_foot">
+        <div class="foot_border">
+            <div class="foot_cursor"></div>
+        </div>
+        <div class="news_links foot_links">
+            <a href="#view_content_0" id="news_link_0" class="foot_link"></a>
+            <a href="#view_content_1" id="news_link_1" class="foot_link"></a>
+            <a href="#view_content_2" id="news_link_2" class="foot_link"></a>
+        </div>
+    </div>
+</div>
+<div id="interactive" class="view"></div>
+<div id="acount" class="view"></div>
 <script src="../js/content.js"></script>
+<!-- <link rel="stylesheet" href="../../fullPage/jquery.fullPage.css">
+<script src="../../jquery-3.2.1.js"></script>
+<script src="../../fullPage/dist/jquery.fullpage.extensions.min.js"></script>
+<script src="../../f"></script>
+<script src="../js/test.js"></script> -->
 	</div>
 	<div class="foot"></div>
 </div>
+<!-- <script src="../js/mouse.js"></script> -->
 
 </body>
 </html>

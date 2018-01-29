@@ -29,6 +29,9 @@ body {
 
 @media (max-width: 1000px) {
   #main {
+    width: 1000px; }
+
+  .menu {
     width: 1000px; } }
 @media (max-height: 600px) {
   #main {
@@ -43,7 +46,14 @@ body {
     left: 0px;
     overflow: hidden;
     z-index: 5;
-    position: relative; }
+    position: relative;
+    transition: all 2s;
+    -moz-transition: all 2s;
+    /* Firefox 4 */
+    -webkit-transition: all 2s;
+    /* Safari 和 Chrome */
+    -o-transition: all 2s;
+    /* Opera */ }
   .content #home {
     background: #f5f5f5; }
 

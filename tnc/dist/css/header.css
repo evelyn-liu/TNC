@@ -55,6 +55,13 @@
         .centerMenu ul .nav .nav_sub ul li {
           line-height: 36px;
           display: none; }
+          .centerMenu ul .nav .nav_sub ul li a {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0; }
   .centerMenu ul .nav0 .icon {
     background-position: 15px -11px; }
   .centerMenu ul .nav1 .icon {

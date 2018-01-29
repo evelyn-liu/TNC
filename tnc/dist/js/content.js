@@ -4,15 +4,15 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var setWorld = function () {
-    function setWorld() {
-        _classCallCheck(this, setWorld);
+var setContent = function () {
+    function setContent() {
+        _classCallCheck(this, setContent);
 
         // super();
         this.setWorldHover();
     }
 
-    _createClass(setWorld, [{
+    _createClass(setContent, [{
         key: 'setWorldHover',
         value: function setWorldHover() {
             var worldSpan = document.getElementsByClassName('wd_text');
@@ -50,7 +50,8 @@ var setWorld = function () {
     }, {
         key: 'setOver',
         value: function setOver(e) {
-            var parent = e.path[1];
+
+            var parent = e.target.parentNode;
             var that = this;
             // console.log(parent);
             var circle = parent.getElementsByTagName('div');
@@ -66,7 +67,7 @@ var setWorld = function () {
     }, {
         key: 'setLeave',
         value: function setLeave(e) {
-            var parent = e.path[1];
+            var parent = e.target.parentNode;
             var circle = parent.getElementsByTagName('div');
             circle[0].style += ';opacity:0;';
             var span = parent.getElementsByTagName('span');
@@ -76,7 +77,74 @@ var setWorld = function () {
         }
     }]);
 
-    return setWorld;
+    return setContent;
 }();
 
-var sw = new setWorld();
+var setViewList = function () {
+    function setViewList(parent, str) {
+        _classCallCheck(this, setViewList);
+
+        this.parent = parent;
+        this.str = str;
+        this.lists = null;
+        this.init();
+    }
+
+    _createClass(setViewList, [{
+        key: 'init',
+        value: function init() {
+
+            this.lists = this.parent.getElementsByClassName('view_list');
+            for (var i = 0, len = this.lists.length; i < len; i++) {
+                this.createUl(i);
+            }
+            // console.log(this.str);
+        }
+    }, {
+        key: 'createUl',
+        value: function createUl(i) {
+            for (var k = 0; k < 3; k++) {
+                var viewUl = document.createElement('ul');
+                viewUl.className = 'view_ul';
+                for (var j = 0; j < 4; j++) {
+                    this.createLi(viewUl);
+                }
+                this.lists[i].appendChild(viewUl);
+            }
+        }
+    }, {
+        key: 'createLi',
+        value: function createLi(ul) {
+            var viewLi = document.createElement('li');
+            viewLi.className = 'view_li';
+
+            var viewA = document.createElement('a');
+            viewA.className = this.str + '_a  view_a';
+            var viewTitle = document.createElement('span');
+            viewTitle.className = this.str + '_title';
+            viewA.appendChild(viewTitle);
+
+            var viewImg = document.createElement('div');
+            viewImg.className = this.str + '_img';
+            var img = document.createElement('img');
+            viewImg.appendChild(img);
+            viewA.appendChild(viewImg);
+
+            var viewDate = document.createElement('span');
+            viewDate.className = this.str + '_date';
+            viewA.appendChild(viewDate);
+
+            var viewText = document.createElement('div');
+            viewText.className = this.str + '_text  view_text';
+            viewA.appendChild(viewText);
+            viewLi.appendChild(viewA);
+            ul.appendChild(viewLi);
+        }
+    }]);
+
+    return setViewList;
+}();
+
+var sc = new setContent();
+var news_parent = document.getElementById('news');
+var sv = new setViewList(news_parent, 'news');

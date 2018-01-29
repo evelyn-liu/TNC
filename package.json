@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/evelyn-liu/TNC#readme",
   "devDependencies": {
+    "assert": "^1.4.1",
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.18.13",
@@ -25,6 +26,10 @@
     "gulp-concat": "^2.6.1",
     "gulp-scss": "^1.4.0",
     "gulp-sourcemaps": "^2.6.1",
-    "gulp-swig": "^0.8.0"
+    "gulp-swig": "^0.8.0",
+    "monk": "^6.0.5"
+  },
+  "dependencies": {
+    "mongodb": "^3.0.1"
   }
 }
