@@ -1,3 +1,4 @@
+@charset "utf-8";
 #home {
     .home_logo {
         width: 237px;
@@ -780,6 +781,9 @@
         top: 0px;
         list-style: none;
     }
+    .view_ul_0 {
+        left: 0px;
+    }
     .view_li {
         float: left;
         margin: 0px 8px;
@@ -789,6 +793,7 @@
     }
     .B_left {
         position: absolute;
+        cursor: pointer;
         left: 50%;
         margin-left: -565px;
         top: 50%;
@@ -800,6 +805,7 @@
     }
     .B_right {
         position: absolute;
+        cursor: pointer;
         left: 50%;
         margin-left: 500px;
         top: 50%;

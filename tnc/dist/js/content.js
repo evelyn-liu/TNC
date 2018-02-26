@@ -81,11 +81,12 @@ var setContent = function () {
 }();
 
 var setViewList = function () {
-    function setViewList(parent, str) {
+    function setViewList(parent, str, msg) {
         _classCallCheck(this, setViewList);
 
         this.parent = parent;
         this.str = str;
+        this.msg = msg;
         this.lists = null;
         this.init();
     }
@@ -96,41 +97,49 @@ var setViewList = function () {
 
             this.lists = this.parent.getElementsByClassName('view_list');
             for (var i = 0, len = this.lists.length; i < len; i++) {
-                this.createUl(i);
+                var list_msg = this.msg[i];
+                this.createUl(i, list_msg);
             }
+            this.imgAuto();
             // console.log(this.str);
         }
     }, {
         key: 'createUl',
-        value: function createUl(i) {
+        value: function createUl(i, list_msg) {
             for (var k = 0; k < 3; k++) {
                 var viewUl = document.createElement('ul');
-                viewUl.className = 'view_ul';
+                viewUl.className = 'view_ul view_ul_' + k;
+                viewUl.setAttribute('data-index', '' + k);
+                var ul = 'ul_' + k;
+                var ul_msg = list_msg[ul];
                 for (var j = 0; j < 4; j++) {
-                    this.createLi(viewUl);
+                    this.createLi(viewUl, ul_msg[j]);
                 }
                 this.lists[i].appendChild(viewUl);
             }
         }
     }, {
         key: 'createLi',
-        value: function createLi(ul) {
+        value: function createLi(ul, li_msg) {
             var viewLi = document.createElement('li');
             viewLi.className = 'view_li';
 
             var viewA = document.createElement('a');
             viewA.className = this.str + '_a  view_a';
             var viewTitle = document.createElement('span');
+            viewTitle.innerText = li_msg.title;
             viewTitle.className = this.str + '_title';
             viewA.appendChild(viewTitle);
 
             var viewImg = document.createElement('div');
             viewImg.className = this.str + '_img';
             var img = document.createElement('img');
+            img.src = li_msg.img;
             viewImg.appendChild(img);
             viewA.appendChild(viewImg);
 
             var viewDate = document.createElement('span');
+            viewDate.innerText = li_msg.date;
             viewDate.className = this.str + '_date';
             viewA.appendChild(viewDate);
 
@@ -140,6 +149,24 @@ var setViewList = function () {
             viewLi.appendChild(viewA);
             ul.appendChild(viewLi);
         }
+    }, {
+        key: 'imgAuto',
+        value: function imgAuto() {
+            var leftBtn = document.getElementsByClassName('B_left');
+            var rightBtn = document.getElementsByClassName('B_right');
+            var ll = leftBtn.length;
+            var lr = rightBtn.length;
+            for (var i = 0; i < ll; i++) {
+                leftBtn[i].addEventListener('click', function (e) {
+                    console.log(e);
+                });
+            }
+            for (var _i = 0; _i < lr; _i++) {
+                rightBtn[_i].addEventListener('click', function (e) {
+                    console.log(e);
+                });
+            }
+        }
     }]);
 
     return setViewList;
@@ -147,4 +174,4 @@ var setViewList = function () {
 
 var sc = new setContent();
 var news_parent = document.getElementById('news');
-var sv = new setViewList(news_parent, 'news');
+var sv = new setViewList(news_parent, 'news', news_msg);

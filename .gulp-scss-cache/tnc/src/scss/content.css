@@ -641,6 +641,8 @@
     left: 100%;
     top: 0px;
     list-style: none; }
+  .view_body .view_ul_0 {
+    left: 0px; }
   .view_body .view_li {
     float: left;
     margin: 0px 8px;
@@ -649,6 +651,7 @@
     list-style: none; }
   .view_body .B_left {
     position: absolute;
+    cursor: pointer;
     left: 50%;
     margin-left: -565px;
     top: 50%;
@@ -658,6 +661,7 @@
       padding: 20px; }
   .view_body .B_right {
     position: absolute;
+    cursor: pointer;
     left: 50%;
     margin-left: 500px;
     top: 50%;
