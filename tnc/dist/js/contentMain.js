@@ -124,7 +124,7 @@ var news_msg = [{
     }],
     ul_1: [{
         'title': '城市更新 打造更绿色的城中村',
-        'img': '../imgs',
+        'img': '../imgs/upload/201709/145243_1.jpg',
         'date': '2017-12-20'
     }, {
         'title': '全球最大的牡蛎恢复工程就在美国切萨皮克湾',
@@ -155,5 +155,266 @@ var news_msg = [{
         'title': '沟渠村民自治工作在鹤庆西草海开展',
         'img': '../imgs/upload/201711/172024_1.jpg',
         'date': '2017-11-16'
+    }]
+}];
+var interactive_msg = [{
+    ul_0: [{
+        'title': '全明星支持TNC',
+        'img': '../imgs/upload/201406/111217_1.jpg',
+        'date': '2014-06'
+    }, {
+        'title': '一张图让你看懂生态流',
+        'img': '../imgs/upload/20140325/155111_1.jpg',
+        'date': '2014-03'
+    }, {
+        'title': 'TNC第八届全球摄影大赛',
+        'img': '../imgs/upload/20140217/114545_1.jpg',
+        'date': '2014-02'
+    }, {
+        'title': '内蒙古',
+        'img': '../imgs/upload/20130702/140233_1.jpg',
+        'date': '2013-07'
+    }],
+    ul_1: [{
+        'title': '自然中国',
+        'img': '../imgs/upload/images/20130630/211519_1.jpg',
+        'date': '2013-06'
+    }, {
+        'title': '照片之声',
+        'img': '../imgs/upload/images/20130630/211328.jpg',
+        'date': '2013-06'
+    }, {
+        'title': '红外相机拍摄到的最原生态的动物朋友们',
+        'img': '../imgs/upload/images/20130630/211240.jpg',
+        'date': '2013-06'
+    }, {
+        'title': '梅里雪山生物多样性',
+        'img': '../imgs/upload/images/20130630/211059_1.jpg',
+        'date': '2013-06'
+    }],
+    ul_2: [{
+        'title': '纪念一条即将消逝的自然河流——金沙江',
+        'img': '../imgs/upload/images/20130630/210935_1.jpg',
+        'date': '2013-06'
+    }, {
+        'title': '滇金丝猴的故事',
+        'img': '../imgs/upload/images/20130630/172900.jpg',
+        'date': '2013-06'
+    }, {
+        'title': '鲍洛克眼中的巴尔米拉',
+        'img': '../imgs/upload/20130704/111412_1.jpg',
+        'date': '2013-07'
+    }, {
+        'title': '全明星支持TNC',
+        'img': '../imgs/upload/201406/111217_1.jpg',
+        'date': '2014-06'
+    }]
+}, {
+    ul_0: [{
+        'title': '预警，前方有“鸟中熊猫”出没！',
+        'img': '../imgs/upload/201604/103622_1.jpg',
+        'date': '2016-04'
+    }, {
+        'title': '听大自然保护协会志愿者说！',
+        'img': '../imgs/upload/201508/113603_1.jpg',
+        'date': '2015-08'
+    }, {
+        'title': '汛期来临话洪水',
+        'img': '../imgs/upload/201507/110051_1.jpg',
+        'date': '2015-07'
+    }, {
+        'title': '自然达人林忆莲',
+        'img': '../imgs/upload/201407/143424_1.jpg',
+        'date': '2014-07'
+    }],
+    ul_1: [{
+        'title': '自然达人王敏德',
+        'img': '../imgs/upload/201407/143312_1.jpg',
+        'date': '2014-07'
+    }, {
+        'title': '自然达人莫文蔚',
+        'img': '../imgs/upload/201407/114435_1.jpg',
+        'date': '2014-07'
+    }, {
+        'title': '自然达人吴彦祖',
+        'img': '../imgs/upload/201407/151713_1.jpg',
+        'date': '2014-07'
+    }, {
+        'title': '自然的价值',
+        'img': '../imgs/upload/20131024/153042_1.jpg',
+        'date': '2013-10'
+    }],
+    ul_2: [{
+        'title': '和林格尔生态修复纪实',
+        'img': '../imgs/upload/20130827/114127.jpg',
+        'date': '2013-08'
+    }, {
+        'title': '守护雪山精灵',
+        'img': '../imgs/upload/20130827/113656.jpg',
+        'date': '2013-08'
+    }, {
+        'title': '中国的森林',
+        'img': '../imgs/upload/20130819/161600.jpg',
+        'date': '2013-08'
+    }, {
+        'title': '无国界的保护 中国人在其中',
+        'img': '../imgs/upload/20130720/225855_1.jpg',
+        'date': '2013-07'
+    }]
+}, {
+    ul_0: [{
+        'title': '翻车鱼（学名：Mola mola）',
+        'img': '../imgs/upload/201501/115557_1.jpg',
+        'date': '2015-01'
+    }, {
+        'title': '云南鹤庆草海美景',
+        'img': '../imgs/upload/201501/114453_1.jpg',
+        'date': '2015-01'
+    }, {
+        'title': '西南山地',
+        'img': '../imgs/upload/images/20130630/111600_1.jpg',
+        'date': '2013-06'
+    }, {
+        'title': '密克罗尼西亚的红树林',
+        'img': '../imgs/upload/images/20130630/111543_1.jpg',
+        'date': '2013-06'
+    }],
+    ul_1: [{
+        'title': '梅里雪山的栗臀鳾',
+        'img': '../imgs/upload/images/20130630/111521_1.jpg',
+        'date': '2013-06'
+    }, {
+        'title': '滇西北梅里雪山下正在退缩的明永冰川',
+        'img': '../imgs/upload/images/20130630/111501_1.jpg',
+        'date': '2013-06'
+    }, {
+        'title': '川西原始森林',
+        'img': '../imgs/upload/images/20130630/111429_1.jpg',
+        'date': '2013-06'
+    }, {
+        'title': '川西若尔盖湿地',
+        'img': '../imgs/upload/images/20130630/111125_1.jpg',
+        'date': '2013-06'
+    }],
+    ul_2: [{
+        'title': '草原考察',
+        'img': '../imgs/upload/images/20130628/033440_1.jpg',
+        'date': '2013-06'
+    }, {
+        'title': '草原考察',
+        'img': '../imgs/upload/images/20130628/033440_1.jpg',
+        'date': '2013-06'
+    }, {
+        'title': '草原考察',
+        'img': '../imgs/upload/images/20130628/033440_1.jpg',
+        'date': '2013-06'
+    }, {
+        'title': '草原考察',
+        'img': '../imgs/upload/images/20130628/033440_1.jpg',
+        'date': '2013-06'
+    }]
+}, {
+    ul_0: [{
+        'title': '北极冰盖面积增加',
+        'img': '../imgs/upload/201409/153518_1.jpg',
+        'date': '2014-09'
+    }, {
+        'title': '怎样救助被石油污染的鸟类?',
+        'img': '../imgs/upload/20131128/164401_1.jpg',
+        'date': '2013-11'
+    }, {
+        'title': '美国怎样处理环境争议项目？',
+        'img': '../imgs/upload/20130722/114014_1.jpg',
+        'date': '2013-07'
+    }, {
+        'title': '面对极端天气,怎么做？',
+        'img': '../imgs/upload/20130722/114029_1.jpg',
+        'date': '2013-07'
+    }],
+    ul_1: [{
+        'title': '北极冰盖面积增加',
+        'img': '../imgs/upload/201409/153518_1.jpg',
+        'date': '2014-09'
+    }, {
+        'title': '怎样救助被石油污染的鸟类?',
+        'img': '../imgs/upload/20131128/164401_1.jpg',
+        'date': '2013-11'
+    }, {
+        'title': '美国怎样处理环境争议项目？',
+        'img': '../imgs/upload/20130722/114014_1.jpg',
+        'date': '2013-07'
+    }, {
+        'title': '面对极端天气，怎么做？',
+        'img': '../imgs/upload/20130722/114029_1.jpg',
+        'date': '2013-07'
+    }],
+    ul_2: [{
+        'title': '北极冰盖面积增加',
+        'img': '../imgs/upload/201409/153518_1.jpg',
+        'date': '2014-09'
+    }, {
+        'title': '怎样救助被石油污染的鸟类?',
+        'img': '../imgs/upload/20131128/164401_1.jpg',
+        'date': '2013-11'
+    }, {
+        'title': '美国怎样处理环境争议项目？',
+        'img': '../imgs/upload/20130722/114014_1.jpg',
+        'date': '2013-07'
+    }, {
+        'title': '面对极端天气，一个城市？',
+        'img': '../imgs/upload/20130722/114029_1.jpg',
+        'date': '2013-07'
+    }]
+}, {
+    ul_0: [{
+        'title': 'TNC图书',
+        'img': '../imgs/page_5/case_5/lib_0.jpg',
+        'date': '2015-01'
+    }, {
+        'title': '科学资料',
+        'img': '../imgs/page_5/case_5/lib_1.jpg',
+        'date': '2015-01'
+    }, {
+        'title': '速览TNC',
+        'img': '../imgs/page_5/case_5/lib_2.jpg',
+        'date': '2015-01'
+    }, {
+        'title': '国外资料',
+        'img': '../imgs/page_5/case_5/lib_3.jpg',
+        'date': '2015-01'
+    }],
+    ul_1: [{
+        'title': 'TNC图书',
+        'img': '../imgs/page_5/case_5/lib_0.jpg',
+        'date': '2015-01'
+    }, {
+        'title': '科学资料',
+        'img': '../imgs/page_5/case_5/lib_1.jpg',
+        'date': '2015-01'
+    }, {
+        'title': '速览TNC',
+        'img': '../imgs/page_5/case_5/lib_2.jpg',
+        'date': '2015-01'
+    }, {
+        'title': '国外资料',
+        'img': '../imgs/page_5/case_5/lib_3.jpg',
+        'date': '2015-01'
+    }],
+    ul_2: [{
+        'title': 'TNC图书',
+        'img': '../imgs/page_5/case_5/lib_0.jpg',
+        'date': '2015-01'
+    }, {
+        'title': '科学资料',
+        'img': '../imgs/page_5/case_5/lib_1.jpg',
+        'date': '2015-01'
+    }, {
+        'title': '速览TNC',
+        'img': '../imgs/page_5/case_5/lib_2.jpg',
+        'date': '2015-01'
+    }, {
+        'title': '国外资料',
+        'img': '../imgs/page_5/case_5/lib_3.jpg',
+        'date': '2015-01'
     }]
 }];

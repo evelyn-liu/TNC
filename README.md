@@ -3,5 +3,5 @@
 安装git和grunt
 首页：页面切换组件
 
-browser-sync start --server --files "**/*.css, **/*.html"
+browser-sync start --server --files "**/*.css, **/*.html"    gulp watch
 http://localhost:3000/tnc/dist/html/index.html

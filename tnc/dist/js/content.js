@@ -152,26 +152,75 @@ var setViewList = function () {
     }, {
         key: 'imgAuto',
         value: function imgAuto() {
-            var leftBtn = document.getElementsByClassName('B_left');
-            var rightBtn = document.getElementsByClassName('B_right');
+            var _this = this;
+
+            // console.log(this.parent)
+            var leftBtn = this.parent.getElementsByClassName('B_left');
+            var rightBtn = this.parent.getElementsByClassName('B_right');
             var ll = leftBtn.length;
             var lr = rightBtn.length;
-            for (var i = 0; i < ll; i++) {
+            var that = this;
+
+            var _loop = function _loop(i) {
+                var oContent = _this.parent.getElementsByClassName('view_content');
+                that.linkAuto(i, oContent);
+                var oItems = oContent[i].getElementsByClassName('view_ul');
                 leftBtn[i].addEventListener('click', function (e) {
-                    console.log(e);
+                    for (var j = 0; j < oItems.length; j++) {
+                        var index = +oItems[j].getAttribute('data-index');
+                        oItems[j].classList.remove('view_ul_' + index);
+                        index === 2 ? index = 0 : index++;
+                        oItems[j].setAttribute('data-index', index);
+                        oItems[j].classList.add('view_ul_' + index);
+                    }
                 });
-            }
-            for (var _i = 0; _i < lr; _i++) {
-                rightBtn[_i].addEventListener('click', function (e) {
-                    console.log(e);
+                rightBtn[i].addEventListener('click', function (e) {
+                    for (var j = 0; j < oItems.length; j++) {
+                        var index = +oItems[j].getAttribute('data-index');
+                        oItems[j].classList.remove('view_ul_' + index);
+                        index === 0 ? index = 2 : index--;
+                        oItems[j].setAttribute('data-index', index);
+                        oItems[j].classList.add('view_ul_' + index);
+                    }
                 });
+            };
+
+            for (var i = 0; i < ll; i++) {
+                _loop(i);
             }
+        }
+    }, {
+        key: 'linkAuto',
+        value: function linkAuto(i, oContent) {
+            var oLink = this.parent.getElementsByClassName('foot_link')[i];
+            var cursor = this.parent.getElementsByClassName('foot_cursor');
+            oLink.addEventListener('click', function (e) {
+                var index = i;
+                cursor[index].style = 'opacity:1;';
+                oContent[index].style = 'display:block';
+                var len = cursor.length - 1;
+                for (var _i = 0; _i < len; _i++) {
+                    index === cursor.length - 1 ? index = 0 : index++;
+                    oContent[index].style = 'display:none';
+                }
+            });
+            oLink.addEventListener('mouseover', function (e) {
+                var index = i;
+                cursor[index].style = 'opacity:1;';
+            });
+            oLink.addEventListener('mouseout', function (e) {
+                var index = i;
+                cursor[index].style = 'opacity:0;';
+            });
         }
     }]);
 
     return setViewList;
 }();
 
-var sc = new setContent();
+new setContent();
 var news_parent = document.getElementById('news');
 var sv = new setViewList(news_parent, 'news', news_msg);
+new setContent();
+var interactive_parent = document.getElementById('interactive');
+var ip = new setViewList(interactive_parent, 'interactive', interactive_msg);

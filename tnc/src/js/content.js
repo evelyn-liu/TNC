@@ -129,27 +129,64 @@ class setViewList {
     }
 
     imgAuto() {
-        let leftBtn = document.getElementsByClassName('B_left');
-        let rightBtn = document.getElementsByClassName('B_right');
+        // console.log(this.parent)
+        let leftBtn = this.parent.getElementsByClassName('B_left');
+        let rightBtn = this.parent.getElementsByClassName('B_right');
         let ll = leftBtn.length;
         let lr = rightBtn.length;
+        let that = this;
         for (let i = 0; i < ll; i++) {
+            let oContent = this.parent.getElementsByClassName('view_content');
+            that.linkAuto(i,oContent); 
+            let oItems = oContent[i].getElementsByClassName('view_ul');
             leftBtn[i].addEventListener('click', function (e) {
-                console.log(e)
+                for (let j = 0; j < oItems.length; j++) {
+                    var index = +oItems[j].getAttribute('data-index');
+                    oItems[j].classList.remove('view_ul_' + index);
+                    index === 2 ? (index = 0) : (index++)
+                    oItems[j].setAttribute('data-index', index)
+                    oItems[j].classList.add('view_ul_' + index)
+                }
+
             })
-        }
-        for (let i = 0; i < lr; i++) {
             rightBtn[i].addEventListener('click', function (e) {
-                console.log(e)
+                for (let j = 0; j < oItems.length; j++) {
+                    var index = +oItems[j].getAttribute('data-index');
+                    oItems[j].classList.remove('view_ul_' + index);
+                    index === 0 ? (index = 2) : (index--)
+                    oItems[j].setAttribute('data-index', index)
+                    oItems[j].classList.add('view_ul_' + index)
+                }
             })
         }
-
     }
-
-
-
+    linkAuto(i,oContent){
+        let oLink = this.parent.getElementsByClassName('foot_link')[i];
+        let cursor = this.parent.getElementsByClassName('foot_cursor');
+        oLink.addEventListener('click', function (e) {
+            let index = i;
+            cursor[index].style = 'opacity:1;';
+            oContent[index].style = 'display:block';
+            let len = cursor.length - 1;
+            for(let i =0;i<len;i++){
+                index === cursor.length-1 ? (index = 0) : (index++);
+                oContent[index].style = 'display:none';
+            }    
+        })
+        oLink.addEventListener('mouseover',function(e){
+            let index = i;
+            cursor[index].style = 'opacity:1;';
+        })
+        oLink.addEventListener('mouseout',function(e){
+            let index = i;
+            cursor[index].style = 'opacity:0;';
+        })
+    }
 }
 
-let sc = new setContent();
+new setContent();
 let news_parent = document.getElementById('news');
 let sv = new setViewList(news_parent, 'news', news_msg);
+ new setContent();
+let interactive_parent = document.getElementById('interactive');
+let ip = new setViewList(interactive_parent,'interactive',interactive_msg);
