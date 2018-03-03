@@ -224,3 +224,6 @@ var sv = new setViewList(news_parent, 'news', news_msg);
 new setContent();
 var interactive_parent = document.getElementById('interactive');
 var ip = new setViewList(interactive_parent, 'interactive', interactive_msg);
+new setContent();
+var acount_parent = document.getElementById('acount');
+var ap = new setViewList(acount_parent, 'acount', acount_msg);

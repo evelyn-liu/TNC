@@ -872,3 +872,72 @@
       background-image: url(../imgs/page_5/case_0/menu_4.png); }
     #interactive .view_foot #interactive_link_4 {
       background-image: url(../imgs/page_5/case_0/menu_5.png); }
+
+#acount {
+  background: #d4d8db; }
+  #acount .view_body #view_content_0 {
+    display: block; }
+  #acount .view_body #view_content_1 {
+    display: none; }
+  #acount .view_body #view_content_2 {
+    display: none; }
+  #acount .acount_title {
+    width: 100%;
+    height: 28px;
+    display: block;
+    line-height: 28px;
+    font-size: 15px;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    zoom: 1;
+    white-space: nowrap;
+    _white-space: normal; }
+  #acount .acount_img {
+    width: 234px;
+    height: 140px;
+    display: block;
+    overflow: hidden;
+    background: url(../imgs/loading_gray.gif) center center no-repeat;
+    position: relative; }
+    #acount .acount_img img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 234px;
+      height: 180.96px;
+      margin-left: -117px;
+      margin-top: -90.48px; }
+  #acount .acount_date {
+    width: 100%;
+    height: 28px;
+    display: block;
+    line-height: 28px;
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    text-align: right;
+    font-family: 'din_b'; }
+  #acount .acount_text {
+    width: 100%;
+    height: 172px;
+    display: block;
+    position: absolute;
+    top: 28px;
+    left: 0px;
+    background: url(../imgs/page_5/case_6/text_bg.jpg) 0px 0px no-repeat;
+    overflow: hidden;
+    display: none;
+    _background-image: url(../imgs/page_6/case_0/text_bg.jpg); }
+  #acount .view_foot {
+    background: url(../imgs/page_6/case_0/bg.jpg); }
+    #acount .view_foot .foot_border {
+      background-color: #0e233f; }
+      #acount .view_foot .foot_border .foot_cursor {
+        background-image: url(../imgs/page_6/case_0/triangle.png); }
+    #acount .view_foot #acount_link_0 {
+      background-image: url(../imgs/page_6/case_0/menu_1.png); }
+    #acount .view_foot #acount_link_1 {
+      background-image: url(../imgs/page_6/case_0/menu_5.png); }
+    #acount .view_foot #acount_link_2 {
+      background-image: url(../imgs/page_6/case_0/menu_6.png); }

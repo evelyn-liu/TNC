@@ -190,3 +190,6 @@ let sv = new setViewList(news_parent, 'news', news_msg);
  new setContent();
 let interactive_parent = document.getElementById('interactive');
 let ip = new setViewList(interactive_parent,'interactive',interactive_msg);
+new setContent();
+let acount_parent = document.getElementById('acount');
+let ap = new setViewList(acount_parent,'acount',acount_msg);
