@@ -1,0 +1,22 @@
+{% extends './layout.html' %} {% block title %}TNC 大自然保护协会{% endblock %}{% block head %}
+<link rel="stylesheet" type="text/css" href="../css/index.css"> {% endblock %} {% block content %}
+<div id="main">
+	<div class="menu">
+	{% include "header.html" %}
+	</div>
+
+	<div class="content" >
+			{% include "content.html" %}
+			<div class="foot view">
+				<div class="foot_img">
+					<img src="../imgs/foot.jpg" alt="">
+				</div>
+				{% include "foot.html" %}
+			</div>
+	</div>
+	<div class="popBlock">
+		{% include "popBlock.html" %}
+	</div>
+</div>
+<!-- <script src="../js/mouse.js"></script> -->
+{% endblock %}

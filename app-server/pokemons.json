@@ -1,0 +1,29 @@
+{
+	"settings": {
+		"ai": 2
+	},
+	"data": [
+		{
+			"title": "全栈工程师",
+			"describe": "全栈(Full Stack)工程师,也可以叫全端工程师,熟练掌握服务器端、PC 端、移动端的IT 行业工作人员",
+			"id": 1,
+			"children": [
+				{
+					"title": "服务器端",
+					"describe": "为客户端服务的,服务的内容诸如向客户端提供资源,保存客户端数据等后台操作",
+					"id": 1
+				},
+				{
+					"title": "PC 端",
+					"describe": "personal computer个人电脑端",
+					"id": 2
+				},
+				{
+					"title": "移动端",
+					"describe": "移动设备，例如手机",
+					"id": 3
+				}
+			]
+		}
+	]
+}
