@@ -13,3 +13,4 @@ function setLi(navLi, navUl) {
         navLi[j].style = 'animation:move 0.2s ease forwards;animation-delay:' + delay + 's;display:block;opacity:0';
     }
 };
+

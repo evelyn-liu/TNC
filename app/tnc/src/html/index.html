@@ -1,13 +1,14 @@
 {% extends './layout.html' %} {% block title %}TNC 大自然保护协会{% endblock %}{% block head %}
-<link rel="stylesheet" type="text/css" href="../css/index.css"> {% endblock %} {% block content %}
+<link rel="stylesheet" type="text/css" href="../css/index.css">
+<link rel="stylesheet" href="../css/jquery.fullPage.css"> {% endblock %} {% block content %}
 <div id="main">
 	<div class="menu">
 	{% include "header.html" %}
 	</div>
 
-	<div class="content" >
+	<div class="content"  id="dowebok">
 			{% include "content.html" %}
-			<div class="foot view">
+			<div class="foot view section">
 				<div class="foot_img">
 					<img src="../imgs/foot.jpg" alt="">
 				</div>
@@ -17,6 +18,14 @@
 	<div class="popBlock">
 		{% include "popBlock.html" %}
 	</div>
+			<div class="return-img" id="return-img"></div>
 </div>
-<!-- <script src="../js/mouse.js"></script> -->
+
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/jquery.fullPage.js"></script>
+<script src="../js/popBlock/popBlockMsg.js"></script>
+<script src="../js/contentMain.js"></script>
+<script src="../js/content.js"></script>
+<script src="../js/details/detailsClick.js"></script>
+
 {% endblock %}

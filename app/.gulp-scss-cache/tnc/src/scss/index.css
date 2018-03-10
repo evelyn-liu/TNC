@@ -26,7 +26,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0;
+  opacity: 1;
   z-index: 9999; }
 
 @media (max-width: 1000px) {
@@ -90,18 +90,19 @@ body {
   opacity: 0.5; }
 
 .popBlock {
-  height: 600px;
   position: absolute;
   display: block;
-  left: 35%;
+  left: 115%;
   margin-left: -60px;
   opacity: 1;
   width: 65%;
-  height: 100%;
-  top: 0%;
+  height: 80%;
+  top: 88px;
   z-index: 201;
   background: #FFF;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35); }
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
+  overflow: auto;
+  transition: left 0.5s ease; }
 
 .pop-head {
   position: relative;
@@ -126,6 +127,51 @@ body {
       line-height: 91px;
       display: block;
       text-overflow: ellipsis;
-      white-space: nowrap; }
+      white-space: nowrap;
+      margin-left: 50px;
+      margin-top: 7px; }
+
+.pop-body {
+  width: 100%;
+  overflow: hidden;
+  outline: none; }
+
+.pb_h {
+  font-size: 16px;
+  color: #666666;
+  line-height: 20px;
+  margin: 30px 60px 0px; }
+
+.pb_img {
+  height: 300px;
+  width: 700px;
+  display: block;
+  margin: 70px 90px; }
+
+.pb_p {
+  font-size: 12px;
+  line-height: 20px;
+  color: #333333;
+  text-indent: 20px; }
+
+.pb_sh {
+  font: inherit;
+  font-weight: bold; }
+
+.pb_text {
+  width: 80%;
+  margin: 0 auto; }
+
+.return-img {
+  display: block;
+  background: url(../imgs/nav/return.png) 0px -63px no-repeat;
+  width: 63px;
+  height: 63px;
+  top: 102px;
+  left: 100%;
+  position: absolute;
+  z-index: 66;
+  cursor: pointer;
+  transition: left 0.5s ease; }
 
 /*# sourceMappingURL=index.css.map */

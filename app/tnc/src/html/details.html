@@ -1,0 +1,23 @@
+{% extends './layout.html' %} {% block title %}详情{% endblock %}{% block head %}
+<link rel="stylesheet" type="text/css" href="../css/index.css"> 
+<link rel="stylesheet" type="text/css" href="../css/details.css">
+{% endblock %} {% block content %}
+<div id="main">
+	<div class="menu">
+	{% include "header.html" %}
+	</div>
+
+	<div class="content" >
+		<div class="content_img">
+			<img src="" alt="" class="ci_img">
+		</div>
+		<div class="content_border"></div>
+		<div class="content_body">
+			<div class="cb_left"></div>
+		</div>
+			<div class="foot view">
+				{% include "foot.html" %}
+			</div>
+	</div>
+	<script src="../js/details/details.js"></script>
+{% endblock %}

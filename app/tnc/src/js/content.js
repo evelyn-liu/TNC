@@ -106,6 +106,7 @@ class setViewList {
         viewA.className = this.str + '_a  view_a';
         let viewTitle = document.createElement('span');
         viewTitle.innerText = li_msg.title;
+        viewTitle.style += 'text-overflow:ellipsis';
         viewTitle.className = this.str + '_title';
         viewA.appendChild(viewTitle);
 
@@ -193,3 +194,7 @@ let ip = new setViewList(interactive_parent,'interactive',interactive_msg);
 new setContent();
 let acount_parent = document.getElementById('acount');
 let ap = new setViewList(acount_parent,'acount',acount_msg);
+
+$(function(){
+    $('#dowebok').fullpage();
+});

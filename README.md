@@ -8,4 +8,4 @@ browser-sync start --server --files "**/*.css, **/*.html"    gulp watch
 http://localhost:3000/app/tnc/dist/html/index.html
 
 #app server
-cnpm start
+cnpm run dev
